@@ -1,0 +1,59 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = F458C9F81016096400676BE2 /* Namaste */;
+		activeTarget = 8D1107260486CEB800E47090 /* Namaste */;
+		codeSenseManager = F458CA051016098800676BE2 /* Code sense */;
+		executables = (
+			F458C9F81016096400676BE2 /* Namaste */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 269879653;
+			PBXWorkspaceStateSaveDate = 269879653;
+		};
+		sourceControlManager = F458CA041016098800676BE2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* Namaste */ = {
+		activeExec = 0;
+		executables = (
+			F458C9F81016096400676BE2 /* Namaste */,
+		);
+	};
+	F458C9F81016096400676BE2 /* Namaste */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Namaste;
+		sourceDirectories = (
+		);
+	};
+	F458CA041016098800676BE2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	F458CA051016098800676BE2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
