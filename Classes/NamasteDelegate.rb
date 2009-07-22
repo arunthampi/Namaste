@@ -21,6 +21,7 @@ class NamasteDelegate
     url = sender.stringValue
     url = "http://#{url}" if url.index('http:\/\/').nil?
     
+    NSLog("Going to log url: #{url}")
     web_view.mainFrame.loadRequest(NSURLRequest.requestWithURL(NSURL.URLWithString(url)))
   end
   
