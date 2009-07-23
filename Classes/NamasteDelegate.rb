@@ -20,6 +20,9 @@ class NamasteDelegate
     # so that we can handle events
     url_field.delegate = self
     google_search_field.delegate = self
+    # Set the webviews delegate to also be NamasteDelegate
+    web_view.frameLoadDelegate = self
+    
     # Introductory log, Namaste to you too
     NSLog("Namaste!")
   end
@@ -56,6 +59,15 @@ class NamasteDelegate
         NSLog "Fetching the URL: #{url}"
         web_view.mainFrame.loadRequest(NSURLRequest.requestWithURL(NSURL.URLWithString(url)))
       end
+    end
+  end
+  
+  # Delegate method which displays the current URL
+  def webView(sender, didStartProvisionalLoadForFrame:frame)
+    if frame == sender.mainFrame
+      url = frame.provisionalDataSource.request.URL.absoluteString
+      NSLog "URL Received from delegate method: #{url}"
+      url_field.stringValue = url
     end
   end
   
