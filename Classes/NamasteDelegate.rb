@@ -24,9 +24,9 @@ class NamasteDelegate
     NSLog("Namaste!")
   end
   
-  # This is a delegate method which whenever Cocoa thinks that text editing has finished.
-  # Text Editing is deemed finished when either the return key is pressed, or the tab key 
-  # is pressed, or could be because some other event.
+  # This is a delegate method which is called whenever Cocoa thinks that text editing
+  # has finished. Text Editing is deemed finished when either the return key is pressed,
+  # or the tab key is pressed, or could be because some other event.
   #
   # The challenge here is to make sure that:
   #   1. we only respond to return key events
