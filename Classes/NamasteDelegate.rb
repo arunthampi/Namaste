@@ -16,6 +16,8 @@ class NamasteDelegate
   attr_accessor :google_search_field
   # Outlet for the go back and go forward buttons
   attr_accessor :go_back_button, :go_forward_button
+  # Outlet for Load Status
+  attr_accessor :load_status_label, :load_status_spinner
   
   def applicationDidFinishLaunching(notification)
     # Set the delegate of the URL Field to be NamasteDelegate,
@@ -24,7 +26,6 @@ class NamasteDelegate
     google_search_field.delegate = self
     # Set the webviews delegate to also be NamasteDelegate
     web_view.frameLoadDelegate = self
-    
     # Introductory log, Namaste to you too
     NSLog("Namaste!")
   end
@@ -59,6 +60,11 @@ class NamasteDelegate
       
       if url # Only if the URL is set, do soemthing, otherwise sit still.
         NSLog "Fetching the URL: #{url}"
+        load_status_label.stringValue = "Loading Web Page"
+        load_status_label.hidden = false
+        
+        load_status_spinner.startAnimation(self)
+        load_status_spinner.hidden = false
         web_view.mainFrame.loadRequest(NSURLRequest.requestWithURL(NSURL.URLWithString(url)))
       end
     end
@@ -92,6 +98,10 @@ class NamasteDelegate
       NSLog "Can go Back: #{sender.canGoBack} Can Go Forward: #{sender.canGoForward}"
       go_back_button.enabled = (sender.canGoBack == 0) ? false : true
       go_forward_button.enabled = (sender.canGoForward == 0) ? false : true
+      NSLog "Going to set loading page"
+      load_status_label.stringValue = "Done"
+      load_status_spinner.hidden = true
+      load_status_spinner.stopAnimation(self)
     end
   end
   
