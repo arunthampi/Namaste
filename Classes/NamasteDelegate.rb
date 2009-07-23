@@ -71,4 +71,12 @@ class NamasteDelegate
     end
   end
   
+  # Delegate method which displays the title tag of the page as the title of the window
+  def webView(sender, didReceiveTitle:title, forFrame:frame)
+    if frame == sender.mainFrame
+      sender.window.title = title
+      NSLog "Received title for page: #{title}"
+    end
+  end
+  
 end
