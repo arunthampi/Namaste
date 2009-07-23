@@ -79,6 +79,8 @@ class NamasteDelegate
     end
   end
   
+  # Delegate method which displays the URL in the address field after the page has
+  # finally loaded
   def webView(sender, didFinishLoadForFrame:frame)
     if frame == sender.mainFrame
       url = frame.dataSource.request.URL.absoluteString
