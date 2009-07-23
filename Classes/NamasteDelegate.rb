@@ -79,4 +79,12 @@ class NamasteDelegate
     end
   end
   
+  def webView(sender, didFinishLoadForFrame:frame)
+    if frame == sender.mainFrame
+      url = frame.dataSource.request.URL.absoluteString
+      NSLog "URL Received from the final loading of the frame: #{url}"
+      url_field.stringValue = url
+    end
+  end
+      
 end
