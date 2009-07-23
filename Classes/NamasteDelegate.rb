@@ -14,6 +14,8 @@ class NamasteDelegate
   attr_accessor :url_field
   # Outlet for the Google Search Box
   attr_accessor :google_search_field
+  # Outlet for the go back and go forward buttons
+  attr_accessor :go_back_button, :go_forward_button
   
   def applicationDidFinishLaunching(notification)
     # Set the delegate of the URL Field to be NamasteDelegate,
@@ -86,7 +88,21 @@ class NamasteDelegate
       url = frame.dataSource.request.URL.absoluteString
       NSLog "URL Received from the final loading of the frame: #{url}"
       url_field.stringValue = url
+      # Maintain state for back and forward buttons
+      NSLog "Can go Back: #{sender.canGoBack} Can Go Forward: #{sender.canGoForward}"
+      go_back_button.enabled = (sender.canGoBack == 0) ? false : true
+      go_forward_button.enabled = (sender.canGoForward == 0) ? false : true
     end
+  end
+  
+  # Action which handles the back button
+  def goBack(sender)
+    web_view.goBack
+  end
+  
+  # Action which handles the forward button
+  def goForward(sender)
+    web_view.goForward
   end
       
 end
