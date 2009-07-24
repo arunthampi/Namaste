@@ -49,7 +49,7 @@ class NamasteDelegate
       if notification.object == url_field
         url = url_field.stringValue
         unless url.nil? || url.length == 0
-          url = "http://#{url}" if url.index('http:\/\/').nil?
+          url = "http://#{url}" if url.index('http://').nil?
         end
       elsif notification.object == google_search_field
         search_term  = google_search_field.stringValue
