@@ -18,6 +18,8 @@ class NamasteDelegate
   attr_accessor :go_back_button, :go_forward_button
   # Outlet for Load Status
   attr_accessor :load_status_label, :load_status_spinner
+  # User Agent Constant
+  USER_AGENT = "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.19.2 (KHTML, like Gecko) Version/4.0.2 Safari/530.19"
   
   def applicationDidFinishLaunching(notification)
     # Set the delegate of the URL Field to be NamasteDelegate,
@@ -26,7 +28,9 @@ class NamasteDelegate
     google_search_field.delegate = self
     # Set the webviews delegate to also be NamasteDelegate
     web_view.frameLoadDelegate = self
-    # Introductory log, Namaste to you too
+    web_view.customUserAgent = USER_AGENT
+    
+    # Introductory log, Namaste to you too 
     NSLog("Namaste!")
   end
   
