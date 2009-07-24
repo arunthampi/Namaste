@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="417"/>
+			<integer value="372"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -801,7 +801,7 @@
 									<string>public.url-name</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{0, 30}, {1212, 676}}</string>
+							<string key="NSFrame">{{0, 20}, {1212, 686}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView"/>
 							<string key="FrameName"/>
@@ -933,14 +933,18 @@
 						<object class="NSTextField" id="14602228">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">-2147483391</int>
-							<string key="NSFrame">{{1076, 7}, {119, 17}}</string>
+							<string key="NSFrame">{{1076, 3}, {119, 14}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="32632199">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">71304192</int>
+								<int key="NSCellFlags2">71435264</int>
 								<string key="NSContents">Loading Web Page</string>
-								<reference key="NSSupport" ref="362779068"/>
+								<object class="NSFont" key="NSSupport">
+									<string key="NSName">LucidaGrande</string>
+									<double key="NSSize">1.100000e+01</double>
+									<int key="NSfFlags">3100</int>
+								</object>
 								<reference key="NSControlView" ref="14602228"/>
 								<object class="NSColor" key="NSBackgroundColor">
 									<int key="NSColorSpace">6</int>
@@ -1996,8 +2000,8 @@
 							<reference ref="241634248"/>
 							<reference ref="410749609"/>
 							<reference ref="307118384"/>
-							<reference ref="14602228"/>
 							<reference ref="60460676"/>
+							<reference ref="14602228"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
