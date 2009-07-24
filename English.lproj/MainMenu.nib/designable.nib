@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="372"/>
+			<integer value="417"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -803,6 +803,7 @@
 							</object>
 							<string key="NSFrame">{{0, 30}, {1212, 676}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSNextKeyView"/>
 							<string key="FrameName"/>
 							<string key="GroupName"/>
 							<object class="WebPreferences" key="Preferences">
@@ -931,7 +932,7 @@
 						</object>
 						<object class="NSTextField" id="14602228">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">-2147483380</int>
+							<int key="NSvFlags">-2147483391</int>
 							<string key="NSFrame">{{1076, 7}, {119, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSEnabled">YES</bool>
@@ -960,7 +961,7 @@
 						</object>
 						<object class="NSProgressIndicator" id="60460676">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">-2147482356</int>
+							<int key="NSvFlags">-2147482355</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
 							<string key="NSFrame">{{941, 717}, {16, 16}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
@@ -2423,9 +2424,9 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{1277, -239}, {1212, 756}}</string>
+					<string>{{1363, -41}, {1212, 756}}</string>
 					<boolean value="YES" id="5"/>
-					<string>{{1277, -239}, {1212, 756}}</string>
+					<string>{{1363, -41}, {1212, 756}}</string>
 					<reference ref="9"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<reference ref="5"/>
