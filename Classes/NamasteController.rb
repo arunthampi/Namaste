@@ -7,7 +7,7 @@
 #
 require 'uri'
 
-class NamasteDelegate
+class NamasteController
   # Outlet for the web view which actually uses WebKit
   attr_accessor :web_view
   # Outlet for the address bar

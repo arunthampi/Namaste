@@ -14,7 +14,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F4280BA9101AADE000DC5424 /* NamasteDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = F4280BA8101AADE000DC5424 /* NamasteDocument.rb */; };
-		F4C7321E1016116800B04B4F /* NamasteDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = F4C7321D1016116700B04B4F /* NamasteDelegate.rb */; };
+		F4C7321E1016116800B04B4F /* NamasteController.rb in Resources */ = {isa = PBXBuildFile; fileRef = F4C7321D1016116700B04B4F /* NamasteController.rb */; };
 		F4C73305101683B000B04B4F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C73304101683B000B04B4F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Namaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4280BA8101AADE000DC5424 /* NamasteDocument.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NamasteDocument.rb; path = Classes/NamasteDocument.rb; sourceTree = "<group>"; };
-		F4C7321D1016116700B04B4F /* NamasteDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NamasteDelegate.rb; path = Classes/NamasteDelegate.rb; sourceTree = "<group>"; };
+		F4C7321D1016116700B04B4F /* NamasteController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NamasteController.rb; path = Classes/NamasteController.rb; sourceTree = "<group>"; };
 		F4C73304101683B000B04B4F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				F4280BA8101AADE000DC5424 /* NamasteDocument.rb */,
-				F4C7321D1016116700B04B4F /* NamasteDelegate.rb */,
+				F4C7321D1016116700B04B4F /* NamasteController.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
-				F4C7321E1016116800B04B4F /* NamasteDelegate.rb in Resources */,
+				F4C7321E1016116800B04B4F /* NamasteController.rb in Resources */,
 				F4280BA9101AADE000DC5424 /* NamasteDocument.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -980,7 +980,7 @@
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
 			</object>
 			<object class="NSCustomObject" id="777647257">
-				<string key="NSClassName">NamasteDelegate</string>
+				<string key="NSClassName">NamasteController</string>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -2517,7 +2517,7 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">NamasteDelegate</string>
+					<string key="className">NamasteController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2557,7 +2557,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/NamasteDelegate.rb</string>
+						<string key="minorKey">Classes/NamasteController.rb</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
