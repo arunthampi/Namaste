@@ -13,6 +13,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F4280BA9101AADE000DC5424 /* NamasteDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = F4280BA8101AADE000DC5424 /* NamasteDocument.rb */; };
 		F4C7321E1016116800B04B4F /* NamasteDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = F4C7321D1016116700B04B4F /* NamasteDelegate.rb */; };
 		F4C73305101683B000B04B4F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C73304101683B000B04B4F /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Namaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4280BA8101AADE000DC5424 /* NamasteDocument.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NamasteDocument.rb; path = Classes/NamasteDocument.rb; sourceTree = "<group>"; };
 		F4C7321D1016116700B04B4F /* NamasteDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NamasteDelegate.rb; path = Classes/NamasteDelegate.rb; sourceTree = "<group>"; };
 		F4C73304101683B000B04B4F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -50,6 +52,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F4280BA8101AADE000DC5424 /* NamasteDocument.rb */,
 				F4C7321D1016116700B04B4F /* NamasteDelegate.rb */,
 			);
 			name = Classes;
@@ -170,6 +173,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
 				F4C7321E1016116800B04B4F /* NamasteDelegate.rb in Resources */,
+				F4280BA9101AADE000DC5424 /* NamasteDocument.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
