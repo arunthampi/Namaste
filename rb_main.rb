@@ -1,9 +1,9 @@
 #
 # rb_main.rb
-# unfollowbot
+# Namaste
 #
 # Created by Greg Borenstein on 5/22/09.
-# Copyright __MyCompanyName__ 2009. All rights reserved.
+# Copyright 2009. All rights reserved.
 #
 
 # Loading the Cocoa framework. If you need to load more frameworks, you can

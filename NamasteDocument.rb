@@ -1,6 +1,6 @@
 #
 #  MyDocument.rb
-#  gisteditor
+#  Namaste
 #
 #  Created by Greg Borenstein on 6/2/09.
 #  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
