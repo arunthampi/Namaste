@@ -6,12 +6,17 @@
 #  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
 #
 
-class MyDocument < NSDocument
+class NamasteDocument < NSDocument
+
+  def windowControllerDidLoadNib(windowController)
+    super(windowController)
+    NSLog("Namaste!")
+  end
 
   def windowNibName
     # Implement this to return a nib to load OR implement
     # -makeWindowControllers to manually create your controllers.
-    return "MyDocument"
+    return "NamasteDocument"
   end
 
   def dataRepresentationOfType(type)
