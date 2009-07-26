@@ -30,8 +30,17 @@ class NamasteDocument < NSDocument
     google_search_field.delegate = self
     # Set the webviews delegate to also be NamasteDelegate
     web_view.frameLoadDelegate = self
+    # Set the UI delegate as well to NamasteDocument, so as to handle new window requests
+    web_view.UIDelegate = self
+    
     web_view.customUserAgent = USER_AGENT
-
+    # It is good practice for browser-like applications to set the group name of WebView objects
+    # after they are loaded from a nib file.
+    # Otherwise, clicking on some links may result in multiple new window requests because the
+    # HTML code for a link might not use the same frame name.
+    # The group name is an arbitrary identifier used to group related frames.
+    web_view.groupName = "Namaste"
+    
     NSLog("Namaste!")
   end
   
@@ -108,6 +117,18 @@ class NamasteDocument < NSDocument
       load_status_spinner.hidden = true
       load_status_spinner.stopAnimation(self)
     end
+  end
+  
+  def webView(sender, createWebViewWithRequest:request)
+    new_document = NSDocumentController.sharedDocumentController.openUntitledDocumentOfType("DocumentType", display: true)
+    new_document.web_view.mainFrame.loadRequest(request)
+    
+    new_document.web_view
+  end
+  
+  def webViewShow(sender)
+    new_document = NSDocumentController.sharedDocumentController.documentForWindow(sender.window)
+    new_document.showWindows
   end
   
   # Action which handles the back button
