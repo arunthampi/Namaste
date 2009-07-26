@@ -18,7 +18,8 @@ class NamasteDocument < NSDocument
   # Outlet for Load Status
   attr_accessor :load_status_label, :load_status_spinner
   # User Agent Constant
-  USER_AGENT = "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.19.2 (KHTML, like Gecko) Version/4.0.2 Safari/530.19"
+  USER_AGENT = "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.19.2" +
+                " (KHTML, like Gecko) Version/4.0.2 Safari/530.19"
 
   def windowControllerDidLoadNib(windowController)
     super(windowController)
