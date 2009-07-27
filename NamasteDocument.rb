@@ -17,6 +17,9 @@ class NamasteDocument < NSDocument
   attr_accessor :go_back_button, :go_forward_button
   # Outlet for Load Status
   attr_accessor :load_status_label, :load_status_spinner
+  # Favicon
+  attr_accessor :favicon
+  
   # User Agent Constant
   USER_AGENT = "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us)" + 
                 " AppleWebKit/530.19.2" +
@@ -24,7 +27,7 @@ class NamasteDocument < NSDocument
 
   def windowControllerDidLoadNib(windowController)
     super(windowController)
-        # Set the delegate of the URL Field to be NamasteDelegate,
+    # Set the delegate of the URL Field to be NamasteDelegate,
     # so that we can handle events
     url_field.delegate = self
     google_search_field.delegate = self
@@ -89,6 +92,11 @@ class NamasteDocument < NSDocument
     url_request.setValue("300", forHTTPHeaderField:"Keep-Alive")
     
     url_request
+  end
+  
+  # Delegate method which displays the favicon
+  def webView(sender, didReceiveIcon:image, forFrame:frame)
+    favicon.image = image if frame == sender.mainFrame && image
   end
   
   # Delegate method which displays the current URL
