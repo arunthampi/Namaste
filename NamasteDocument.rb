@@ -93,9 +93,6 @@ class NamasteDocument < NSDocument
     url_request.setValue("keep-alive", forHTTPHeaderField:"Connection")
     url_request.setValue("300", forHTTPHeaderField:"Keep-Alive")
     
-    headers = url_request.allHTTPHeaderFields
-    NSLog("All headers: #{headers.inspect}")
-    
     url_request
   end
   
