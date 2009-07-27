@@ -74,11 +74,6 @@ class NamasteDocument < NSDocument
       
       if url # Only if the URL is set, do soemthing, otherwise sit still.
         NSLog "Fetching the URL: #{url}"
-        load_status_label.stringValue = "Loading Web Page"
-        load_status_label.hidden = false
-        
-        load_status_spinner.startAnimation(self)
-        load_status_spinner.hidden = false
         web_view.mainFrame.loadRequest(initialize_request(url))
       end
     end
@@ -102,6 +97,12 @@ class NamasteDocument < NSDocument
       url = frame.provisionalDataSource.request.URL.absoluteString
       NSLog "URL Received from delegate method: #{url}"
       url_field.stringValue = url
+      
+      load_status_label.stringValue = "Loading Web Page"
+      load_status_label.hidden = false
+      
+      load_status_spinner.startAnimation(self)
+      load_status_spinner.hidden = false
     end
   end
   
