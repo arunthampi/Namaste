@@ -91,8 +91,8 @@
 									</object>
 									<object class="NSMutableArray" key="dict.values">
 										<bool key="EncodedWithXMLCoder">YES</bool>
-										<integer value="12" id="1018107243"/>
-										<reference ref="1018107243"/>
+										<integer value="13"/>
+										<integer value="16"/>
 										<integer value="1" id="9"/>
 									</object>
 								</object>
@@ -516,9 +516,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{1388, -119}, {1212, 756}}</string>
+					<string>{{1375, -117}, {1212, 756}}</string>
 					<boolean value="YES" id="5"/>
-					<string>{{1388, -119}, {1212, 756}}</string>
+					<string>{{1375, -117}, {1212, 756}}</string>
 					<reference ref="9"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<reference ref="5"/>
@@ -572,9 +572,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goBack:</string>
 							<string>goForward:</string>
+							<string>webViewShow:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
