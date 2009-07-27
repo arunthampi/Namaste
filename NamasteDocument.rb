@@ -5,6 +5,7 @@
 #  Created by Greg Borenstein on 6/2/09.
 #  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
 #
+require 'uri'
 
 class NamasteDocument < NSDocument
   # Outlet for the web view which actually uses WebKit
