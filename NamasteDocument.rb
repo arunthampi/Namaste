@@ -79,9 +79,24 @@ class NamasteDocument < NSDocument
         
         load_status_spinner.startAnimation(self)
         load_status_spinner.hidden = false
-        web_view.mainFrame.loadRequest(NSURLRequest.requestWithURL(NSURL.URLWithString(url)))
+        web_view.mainFrame.loadRequest(initialize_request(url))
       end
     end
+  end
+  
+  def initialize_request(url)
+    url_request = NSMutableURLRequest.requestWithURL(NSURL.URLWithString(url))
+    url_request.setValue("ISO-8859-1,utf-8;q=0.7,*;q=0.7", forHTTPHeaderField:"Accept-Charset")
+    url_request.setValue("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", forHTTPHeaderField:"Accept")
+    url_request.setValue("en-us,en;q=0.5", forHTTPHeaderField:"Accept-Language")
+    url_request.setValue("gzip,deflate", forHTTPHeaderField:"Accept-Encoding")
+    url_request.setValue("keep-alive", forHTTPHeaderField:"Connection")
+    url_request.setValue("300", forHTTPHeaderField:"Keep-Alive")
+    
+    headers = url_request.allHTTPHeaderFields
+    NSLog("All headers: #{headers.inspect}")
+    
+    url_request
   end
   
   # Delegate method which displays the current URL
