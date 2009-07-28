@@ -16,6 +16,7 @@
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		F419E1AB101F4971004AE90F /* AddressTextFieldCell.rb in Resources */ = {isa = PBXBuildFile; fileRef = F419E1AA101F4971004AE90F /* AddressTextFieldCell.rb */; };
 		F473DDE9101C8D2B00207C18 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F473DDE8101C8D2B00207C18 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		37902BDB0FD5F16A00DE3FDE /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Namaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F419E1AA101F4971004AE90F /* AddressTextFieldCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AddressTextFieldCell.rb; sourceTree = "<group>"; };
 		F473DDE8101C8D2B00207C18 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				37902BCB0FD5F11400DE3FDE /* NamasteDocument.rb */,
+				F419E1AA101F4971004AE90F /* AddressTextFieldCell.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				37902BCA0FD5F10500DE3FDE /* rb_main.rb in Resources */,
 				37902BCC0FD5F11400DE3FDE /* NamasteDocument.rb in Resources */,
+				F419E1AB101F4971004AE90F /* AddressTextFieldCell.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
