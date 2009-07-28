@@ -1,5 +1,5 @@
 #
-#  MyDocument.rb
+#  NamasteDocument.rb
 #  Namaste
 #
 #  Created by Greg Borenstein on 6/2/09.
