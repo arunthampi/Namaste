@@ -103,7 +103,7 @@
 						<object class="NSTextField" id="8789370">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">270</int>
-							<string key="NSFrame">{{89, 731}, {847, 22}}</string>
+							<string key="NSFrame">{{67, 731}, {869, 22}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="263460726">
@@ -140,7 +140,7 @@
 						<object class="NSTextField" id="554267778">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">267</int>
-							<string key="NSFrame">{{977, 731}, {224, 22}}</string>
+							<string key="NSFrame">{{959, 731}, {242, 22}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="180614700">
@@ -262,7 +262,7 @@
 									<string>NeXT TIFF v4.0 pasteboard type</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{92, 734}, {16, 16}}</string>
+							<string key="NSFrame">{{71, 734}, {16, 16}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="178743525">
@@ -442,8 +442,8 @@
 							<reference ref="163025048"/>
 							<reference ref="728371648"/>
 							<reference ref="8789370"/>
-							<reference ref="339748718"/>
 							<reference ref="412854696"/>
+							<reference ref="339748718"/>
 						</object>
 						<reference key="parent" ref="923382910"/>
 					</object>
