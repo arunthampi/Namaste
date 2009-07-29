@@ -7,9 +7,9 @@
 #
 
 class AddressTextFieldCell < NSTextFieldCell
-  X_AXIS_PADDING_LEFT = 16
+  X_AXIS_PADDING_LEFT = 17
   Y_AXIS_PADDING = 3
-  HEIGHT = 22
+  HEIGHT = 21.6
   X_AXIS_PADDING_RIGHT = 20
   
   def init
