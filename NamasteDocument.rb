@@ -107,11 +107,7 @@ class NamasteDocument < NSDocument
       NSLog "URL Received from delegate method: #{url}"
       url_field.stringValue = url
       
-      load_status_label.stringValue = "Loading Web Page"
-      load_status_label.hidden = false
-      
-      load_status_spinner.startAnimation(self)
-      load_status_spinner.hidden = false
+      reset_load_status(false)
     end
   end
   
@@ -134,10 +130,7 @@ class NamasteDocument < NSDocument
       NSLog "Can go Back: #{sender.canGoBack} Can Go Forward: #{sender.canGoForward}"
       go_back_button.enabled = (sender.canGoBack == 0) ? false : true
       go_forward_button.enabled = (sender.canGoForward == 0) ? false : true
-      NSLog "Going to set loading page"
-      load_status_label.stringValue = "Done"
-      load_status_spinner.hidden = true
-      load_status_spinner.stopAnimation(self)
+      reset_load_status(true)
     end
   end
   
@@ -163,6 +156,19 @@ class NamasteDocument < NSDocument
     web_view.goForward
   end
   
+  def reset_load_status(isLoaded)
+    load_status, is_hidden, animation_method = if isLoaded
+      ["Done", true, "stopAnimation"]
+    else
+      ["Loading Web Page", false, "startAnimation"]
+    end
+    
+    load_status_label.stringValue = load_status
+    load_status_label.hidden = is_hidden unless isLoaded
+    load_status_spinner.send(animation_method, self)
+    load_status_spinner.hidden = is_hidden
+  end
+
   def windowNibName
     # Implement this to return a nib to load OR implement
     # -makeWindowControllers to manually create your controllers.
