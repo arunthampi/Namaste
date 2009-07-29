@@ -207,12 +207,12 @@
 						<object class="NSTextField" id="163025048">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">-2147483391</int>
-							<string key="NSFrame">{{1076, 3}, {119, 14}}</string>
+							<string key="NSFrame">{{7, 3}, {119, 14}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="58845741">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">71435264</int>
+								<int key="NSCellFlags2">4326400</int>
 								<string key="NSContents">Loading Web Page</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
@@ -439,11 +439,11 @@
 							<reference ref="970177838"/>
 							<reference ref="635586445"/>
 							<reference ref="554267778"/>
-							<reference ref="163025048"/>
 							<reference ref="728371648"/>
 							<reference ref="8789370"/>
 							<reference ref="412854696"/>
 							<reference ref="339748718"/>
+							<reference ref="163025048"/>
 						</object>
 						<reference key="parent" ref="923382910"/>
 					</object>
