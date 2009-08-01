@@ -159,18 +159,22 @@
 						<object class="NSButton" id="635586445">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{10, 730}, {25, 24}}</string>
+							<string key="NSFrame">{{8, 728}, {29, 29}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="971697765">
-								<int key="NSCellFlags">-1543373312</int>
+								<int key="NSCellFlags">604110336</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents"/>
 								<reference key="NSSupport" ref="280042703"/>
 								<reference key="NSControlView" ref="635586445"/>
-								<int key="NSButtonFlags">-2033434369</int>
+								<int key="NSButtonFlags">-2041822977</int>
 								<int key="NSButtonFlags2">162</int>
 								<object class="NSCustomResource" key="NSNormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Back</string>
+								</object>
+								<object class="NSCustomResource" key="NSAlternateImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">NSGoLeftTemplate</string>
 								</object>
@@ -183,18 +187,22 @@
 						<object class="NSButton" id="970177838">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{34, 730}, {25, 24}}</string>
+							<string key="NSFrame">{{36, 728}, {28, 29}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="884148671">
-								<int key="NSCellFlags">-1543373312</int>
+								<int key="NSCellFlags">604110336</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents"/>
 								<reference key="NSSupport" ref="280042703"/>
 								<reference key="NSControlView" ref="970177838"/>
-								<int key="NSButtonFlags">-2033434369</int>
+								<int key="NSButtonFlags">-2041822977</int>
 								<int key="NSButtonFlags2">162</int>
 								<object class="NSCustomResource" key="NSNormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Forward</string>
+								</object>
+								<object class="NSCustomResource" key="NSAlternateImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">NSGoRightTemplate</string>
 								</object>
@@ -436,14 +444,14 @@
 						<reference key="object" ref="920867683"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="970177838"/>
-							<reference ref="635586445"/>
 							<reference ref="554267778"/>
 							<reference ref="728371648"/>
 							<reference ref="8789370"/>
 							<reference ref="412854696"/>
 							<reference ref="339748718"/>
 							<reference ref="163025048"/>
+							<reference ref="970177838"/>
+							<reference ref="635586445"/>
 						</object>
 						<reference key="parent" ref="923382910"/>
 					</object>
@@ -583,12 +591,12 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{1402, -51}, {1212, 756}}</string>
-					<boolean value="YES" id="5"/>
-					<string>{{1402, -51}, {1212, 756}}</string>
+					<string>{{226, -173}, {1212, 756}}</string>
+					<boolean value="NO"/>
+					<string>{{226, -173}, {1212, 756}}</string>
 					<reference ref="9"/>
 					<string>{{33, 99}, {480, 360}}</string>
-					<reference ref="5"/>
+					<boolean value="YES"/>
 					<string>{1024, 768}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
