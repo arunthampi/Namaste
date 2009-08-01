@@ -118,18 +118,22 @@ class NamasteDocument < NSDocument
       NSLog "Received title for page: #{title}"
     end
   end
-  
-  # Delegate method which displays the URL in the address field after the page has
-  # finally loaded
+
+  # Delegate method which is invoked when content starts arriving for a page load.
+  def webView(sender, didCommitLoadForFrame:frame)
+    # Maintain state for back and forward buttons.
+    NSLog "Can go Back: #{sender.canGoBack} Can Go Forward: #{sender.canGoForward}"
+    go_back_button.enabled = (sender.canGoBack == 0) ? false : true
+    go_forward_button.enabled = (sender.canGoForward == 0) ? false : true
+  end
+
+  # Delegate method which is invoked when a page load completes.
+  # Displays the URL in the address field after the page has finally loaded.
   def webView(sender, didFinishLoadForFrame:frame)
     if frame == sender.mainFrame
       url = frame.dataSource.request.URL.absoluteString
       NSLog "URL Received from the final loading of the frame: #{url}"
       url_field.stringValue = url
-      # Maintain state for back and forward buttons
-      NSLog "Can go Back: #{sender.canGoBack} Can Go Forward: #{sender.canGoForward}"
-      go_back_button.enabled = (sender.canGoBack == 0) ? false : true
-      go_forward_button.enabled = (sender.canGoForward == 0) ? false : true
       reset_load_status(true)
     end
   end
