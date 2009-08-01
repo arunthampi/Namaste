@@ -123,8 +123,8 @@ class NamasteDocument < NSDocument
   def webView(sender, didCommitLoadForFrame:frame)
     # Maintain state for back and forward buttons.
     NSLog "Can go Back: #{sender.canGoBack} Can Go Forward: #{sender.canGoForward}"
-    go_back_button.enabled = (sender.canGoBack == 0) ? false : true
-    go_forward_button.enabled = (sender.canGoForward == 0) ? false : true
+    go_back_button.enabled = sender.canGoBack == 1
+    go_forward_button.enabled = sender.canGoForward == 1
   end
 
   # Delegate method which is invoked when a page load completes.
