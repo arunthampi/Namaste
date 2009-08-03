@@ -91,8 +91,8 @@
 									</object>
 									<object class="NSMutableArray" key="dict.values">
 										<bool key="EncodedWithXMLCoder">YES</bool>
-										<integer value="12" id="865481532"/>
-										<reference ref="865481532"/>
+										<integer value="16"/>
+										<integer value="16"/>
 										<integer value="1" id="9"/>
 									</object>
 								</object>
@@ -159,7 +159,7 @@
 						<object class="NSButton" id="635586445">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{8, 728}, {29, 29}}</string>
+							<string key="NSFrame">{{10, 729}, {27, 27}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="971697765">
@@ -187,7 +187,7 @@
 						<object class="NSButton" id="970177838">
 							<reference key="NSNextResponder" ref="920867683"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{36, 728}, {28, 29}}</string>
+							<string key="NSFrame">{{36, 729}, {27, 27}}</string>
 							<reference key="NSSuperview" ref="920867683"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="884148671">
@@ -450,8 +450,8 @@
 							<reference ref="412854696"/>
 							<reference ref="339748718"/>
 							<reference ref="163025048"/>
-							<reference ref="970177838"/>
 							<reference ref="635586445"/>
+							<reference ref="970177838"/>
 						</object>
 						<reference key="parent" ref="923382910"/>
 					</object>
@@ -591,9 +591,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{226, -173}, {1212, 756}}</string>
+					<string>{{1661, -183}, {1212, 756}}</string>
 					<boolean value="NO"/>
-					<string>{{226, -173}, {1212, 756}}</string>
+					<string>{{1661, -183}, {1212, 756}}</string>
 					<reference ref="9"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<boolean value="YES"/>
